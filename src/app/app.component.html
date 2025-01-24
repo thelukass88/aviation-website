@@ -1,0 +1,44 @@
+
+
+<nav class="navbar">
+  <div class="navbar-top">
+    <div class="navbar-top-left">
+      <img src="assets/logo.png" alt="Logo" class="navbar-logo" />
+    </div>
+    <div class="navbar-top-right">
+      <input type="text" class="site-search" placeholder="Search..." />
+      <select class="site-language-selector">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+        <!-- Add more languages if needed -->
+      </select>
+      <button class="login-button">Login</button>
+    </div>
+  </div>
+  <div class="navbar-bottom">
+    <ul class="navbar-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#membership">Membership</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#information">Information</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<app-hero></app-hero>
+<app-about />
+<app-news />
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<router-outlet />

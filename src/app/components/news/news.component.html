@@ -1,0 +1,33 @@
+<section id="news" class="news-section">
+      <h2 class="section-title">Latest News</h2>
+      <div class="news-scroller">
+        <div class="carousel">
+          <!-- Each news item -->
+          <div
+            class="carousel-item"
+            *ngFor="let news of newsList; let i = index"
+            [class.active]="i === currentIndex"
+          >
+            <img [src]="news.image" alt="{{ news.title }}" class="carousel-image" />
+            <div class="carousel-content">
+              <h3>{{ news.title }}</h3>
+              <p>{{ news.description }}</p>
+            </div>
+          </div>
+        </div>
+        <!-- Navigation Arrows -->
+        <button class="carousel-arrow left" (click)="prev()">&#8592;</button>
+        <button class="carousel-arrow right" (click)="next()">&#8594;</button>
+        <!-- Dots Navigation -->
+        <div class="dots">
+          <span
+            *ngFor="let _ of newsList; let i = index"
+            class="dot"
+            [class.active]="i === currentIndex"
+            (click)="goToSlide(i)"
+          ></span>
+        </div>
+      </div>
+  </section>
+  
+  
